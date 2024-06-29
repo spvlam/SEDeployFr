@@ -266,7 +266,8 @@ const CheckoutPage = () => {
     let accessToken =localStorage.getItem(LOCAL_STORAGE.accessToken) 
     let refreshToken =  localStorage.getItem(LOCAL_STORAGE.refreshToken) 
     let user_id =  localStorage.getItem(LOCAL_STORAGE.user_id) 
-    let submitData = {amount: total*100,bankCode:'',orderDescription:user_id,language:'vn',orderType:'other'}
+    console.log(user_id)
+    let submitData = {amount: total*100,bankCode:'',user_id:user_id,language:'vn',orderType:'other'}
     if(accessToken == null || refreshToken == null){
       accessToken = refreshToken = "abc"
     }

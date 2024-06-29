@@ -58,7 +58,7 @@ const NotifyAddTocart: FC<Props> = ({
                 type="button"
                 className="font-medium text-primary-6000 dark:text-primary-500 "
               >
-                View cart
+               <a href="/cart"> View cart</a>
               </button>
             </div>
           </div>

@@ -60,22 +60,28 @@ const AccountOrder = () => {
           <div>
             <p className="text-lg font-semibold">#WU3746HGG12</p>
             <p className="text-slate-500 dark:text-slate-400 text-sm mt-1.5 sm:mt-2">
-              <span>Aug 8, 2023</span>
+              <span>June, 2024</span>
               <span className="mx-2">·</span>
-              <span className="text-primary-500">Delivered</span>
+              <span className="text-primary-500">Preparing</span>
             </p>
           </div>
-          <div className="mt-3 sm:mt-0">
+          <div className="mt-3 sm:mt-0 space-x-2">
+          <ButtonSecondary
+              sizeClass="py-2.5 px-4 sm:px-6"
+              fontSize="text-sm font-medium"
+            >
+              Cancel Order
+            </ButtonSecondary>
             <ButtonSecondary
               sizeClass="py-2.5 px-4 sm:px-6"
               fontSize="text-sm font-medium"
             >
-              View Order
+             <a href="/cart"> View Order</a>
             </ButtonSecondary>
           </div>
         </div>
         <div className="border-t border-slate-200 dark:border-slate-700 p-2 sm:p-8 divide-y divide-y-slate-200 dark:divide-slate-700">
-          {[PRODUCTS[0], PRODUCTS[1], PRODUCTS[2]].map(renderProductItem)}
+         
         </div>
       </div>
     );
@@ -86,7 +92,7 @@ const AccountOrder = () => {
       {/* HEADING */}
       <h2 className="text-2xl sm:text-3xl font-semibold">Order History</h2>
       {renderOrder()}
-      {renderOrder()}
+     
     </div>
   );
 };

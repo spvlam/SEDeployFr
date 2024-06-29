@@ -85,6 +85,7 @@ const image = productData?.image || "";
     if(accessToken == null || refreshToken == null){
       accessToken = refreshToken = "abc"
     }
+    console.log(API_SERVER_CONFIG.order_add_product_to_cart+user_id+'/'+id)
     let res = await fetch(API_SERVER_CONFIG.order_add_product_to_cart+user_id+'/'+id,{
       method:'GET',
       headers: {

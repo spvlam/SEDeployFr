@@ -13,9 +13,9 @@ const Component = () => {
 
   if (accessToken && refreshToken && name) {
     // Process the JSON data as needed
-    localStorage.setItem(LOCAL_STORAGE.accessToken, accessToken[0]);
-    localStorage.setItem(LOCAL_STORAGE.refreshToken, refreshToken[0]);
-    localStorage.setItem(LOCAL_STORAGE.userName, name[0]);
+    localStorage.setItem(LOCAL_STORAGE.accessToken, accessToken);
+    localStorage.setItem(LOCAL_STORAGE.refreshToken, refreshToken);
+    localStorage.setItem(LOCAL_STORAGE.userName, name);
     // Redirect to the root URL
     router.push('/');
   }
